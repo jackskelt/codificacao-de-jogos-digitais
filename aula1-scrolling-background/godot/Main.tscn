@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bym65rvcybfjs"]
+
+[ext_resource type="Texture2D" uid="uid://bb77oomhniwxw" path="res://Assets/background.png" id="1_glv2v"]
+[ext_resource type="Texture2D" uid="uid://bbppi4viesopc" path="res://Assets/ship.png" id="2_uu6xs"]
+
+[node name="Node2D" type="Node2D" unique_id=411009389]
+
+[node name="Background" type="Parallax2D" parent="." unique_id=1035218677]
+repeat_size = Vector2(0, 1280)
+autoscroll = Vector2(0, 300)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=1743321596]
+position = Vector2(360, 640)
+rotation = 1.5707964
+scale = Vector2(2, 2)
+texture = ExtResource("1_glv2v")
+
+[node name="SpriteNave" type="Sprite2D" parent="." unique_id=546091643]
+position = Vector2(360, 1200)
+texture = ExtResource("2_uu6xs")
